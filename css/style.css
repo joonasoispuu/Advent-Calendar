@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.button-container {
+    text-align: center;
+    padding: 2rem;
+}
+
+.btn-start {
+    display: inline-block;
+    background-color: rgb(14, 211, 90);
+    color: white;
+    border-radius: 5px;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.container {
+    height: 1200px;
+    width: 1200px;
+    border: 1px solid black;
+    margin: 1rem auto;
+    background-image: url('../img/background.jpg');
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "day1 day2 day3 day4 day5 day6"
+    "day7 day8 day9 day10 day11 day12"
+    "day13 day14 day15 day16 day17 day18"
+    "day19 day20 day21 day22 day23 day24"
+    ;
+}
+
+.image {
+    background-size: cover;
+    background-position: center;
+}
+
+.text {
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    transition: opacity 2s;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+
+.countdown {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.countdown div {
+    padding: 0.5rem;
+    border: 1px solid black;
+    color: white;
+    border-radius: 5px;
+    margin: 0.5rem;
+    background-color: rgb(37, 153, 81);
+}
